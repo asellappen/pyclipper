@@ -83,7 +83,63 @@ matrix:
     - os: osx
       env:
         - MB_PYTHON_VERSION=3.8
-
+#power on support 
+    - os: linux
+      arch: ppc64le
+      env: MB_PYTHON_VERSION=2.7
+    - os: linux
+      arch: ppc64le-
+      env:
+        - MB_PYTHON_VERSION=2.7
+        - UNICODE_WIDTH=16
+    - os: linux
+      arch: ppc64le
+      env:
+        - MB_PYTHON_VERSION=2.7
+        - PLAT=i686
+    - os: linux
+      arch: ppc64le
+      env:
+        - MB_PYTHON_VERSION=2.7
+        - PLAT=i686
+        - UNICODE_WIDTH=16
+    - os: linux
+      arch: ppc64le
+      env:
+        - MB_PYTHON_VERSION=3.5
+    - os: linux
+      arch: ppc64le
+      env:
+        - MB_PYTHON_VERSION=3.5
+        - PLAT=i686
+    - os: linux
+      arch: ppc64le
+      env:
+        - MB_PYTHON_VERSION=3.6
+        - BUILD_SDIST=true
+    - os: linux
+      arch: ppc64le
+      env:
+        - MB_PYTHON_VERSION=3.6
+        - PLAT=i686
+    - os: linux
+      arch: ppc64le
+      env:
+        - MB_PYTHON_VERSION=3.7
+    - os: linux
+      arch: ppc64le
+      env:
+        - MB_PYTHON_VERSION=3.7
+        - PLAT=i686
+    - os: linux
+      arch: ppc64le
+      env:
+        - MB_PYTHON_VERSION=3.8
+    - os: linux
+      arch: ppc64le
+      env:
+        - MB_PYTHON_VERSION=3.8
+        - PLAT=i686
 before_install:
   - source multibuild/common_utils.sh
   - source multibuild/travis_steps.sh
