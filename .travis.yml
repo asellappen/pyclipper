@@ -144,8 +144,8 @@ before_install:
   - source multibuild/common_utils.sh
   - source multibuild/travis_steps.sh
   - before_install
-  - pip wheel --wheel-dir=$REPO_DIR $PLAT
-  - pip install --no-index --find-links=$REPO_DIR $PLAT
+#  - pip wheel --wheel-dir=$REPO_DIR $PLAT
+ # - pip install --no-index --find-links=$REPO_DIR $PLAT
 
 install:
   -  travis_wait 45 build_wheel $REPO_DIR $PLAT
