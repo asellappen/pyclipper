@@ -1,3 +1,4 @@
+dist: bionic
 env:
   global:
     # directory containing the project source
