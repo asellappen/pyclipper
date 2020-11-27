@@ -19,8 +19,7 @@ git:
   depth: 9999999
 
 language: generic
-#dist: xenial
-dist: bionic
+dist: xenial
 services: docker
 
 matrix:
