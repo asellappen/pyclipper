@@ -149,10 +149,10 @@ before_install:
 
 
 install:
-  -  travis_wait 45 build_wheel $REPO_DIR $PLAT
+  -  build_wheel $REPO_DIR $PLAT
 
 script:
-  - travis_wait 30  install_run   $PLAT
+  - install_run   $PLAT
 
 after_success:
   # if tagged, upload wheels (and sdist) to PyPI
